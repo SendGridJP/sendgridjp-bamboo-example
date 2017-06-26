@@ -1,6 +1,6 @@
 # SendgridjpBambooExample
 
-本コードはElixir bambooパッケージの利用サンプルです。
+本コードはElixir [bamboo](https://hex.pm/packages/bamboo)パッケージの利用サンプルです。
 
 ## インストール
 
@@ -8,6 +8,9 @@
 # サンプルコードをcloneします。
 $ git clone http://github.com/sendgridjp/sendgridjp-bamboo-example.git
 $ cd sendgridjp-bamboo-example
+
+# 依存関係を解決します。
+$ mix deps.get
 
 # 環境変数にSendGridのAPIキーを設定します。
 $ export SENDGRID_API_KEY=SG.********
