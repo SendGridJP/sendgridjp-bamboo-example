@@ -1,10 +1,10 @@
 # SendgridjpBambooExample
 
-本コードはElixir sendgridパッケージの利用サンプルです。
+本コードはElixir bambooパッケージの利用サンプルです。
 
 ## インストール
 
-```
+```shell
 # サンプルコードをcloneします。
 $ git clone http://github.com/sendgridjp/sendgridjp-bamboo-example.git
 $ cd sendgridjp-bamboo-example
@@ -20,13 +20,13 @@ $ vi lib/sendgridjp_bamboo_example/email.ex
 
 iexを起動します。
 
-```
+```shell
 $ iex -S mix
 ```
 
 単一の宛先に1通のメールを送信するサンプルを実行します。
 
-```
+```elixir
 iex(1)> SendgridjpBambooExample.Email.single_email_to_a_single_recipient |> SendgridjpBambooExample.Mailer.deliver_now
 
 11:17:05.235 [debug] Sending email with Bamboo.SendgridAdapter:
@@ -48,7 +48,7 @@ by adding `sendgridjp_bamboo_example` to your list of dependencies in `mix.exs`:
 
 複数の宛先にそれぞれ1通のメールを送信するサンプルを実行します。
 
-```
+```elixir
 iex(2)> SendgridjpBambooExample.Email.single_email_to_multiple_recipients |> SendgridjpBambooExample.Mailer.deliver_now
 
 11:18:18.738 [debug] Sending email with Bamboo.SendgridAdapter:
