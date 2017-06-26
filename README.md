@@ -24,7 +24,7 @@ iexを起動します。
 $ iex -S mix
 ```
 
-単一の宛先に1通のメールを送信するサンプルを実行します。
+[単一の宛先に1通のメールを送信するサンプル](https://github.com/SendGridJP/sendgridjp-bamboo-example/blob/master/lib/sendgridjp_bamboo_example/email.ex#L11)を実行します。
 
 ```elixir
 iex(1)> SendgridjpBambooExample.Email.single_email_to_a_single_recipient |> SendgridjpBambooExample.Mailer.deliver_now
@@ -46,7 +46,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `sendgridjp_bamboo_example` to your list of dependencies in `mix.exs`:
 ```
 
-複数の宛先にそれぞれ1通のメールを送信するサンプルを実行します。
+[複数の宛先にそれぞれ1通のメールを送信するサンプル](https://github.com/SendGridJP/sendgridjp-bamboo-example/blob/master/lib/sendgridjp_bamboo_example/email.ex#L27)を実行します。
 
 ```elixir
 iex(2)> SendgridjpBambooExample.Email.single_email_to_multiple_recipients |> SendgridjpBambooExample.Mailer.deliver_now
